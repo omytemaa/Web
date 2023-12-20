@@ -1,0 +1,69 @@
+main{
+    width: 95%;
+    float: left;
+    height: 100%;
+    border: 5px solid rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#Start{
+    background: rgb(60, 60, 60);
+    color: rgb(255, 255, 255);
+    height: 30%;
+    font-family: 'Montserrat';
+    border-bottom: 5px dashed silver;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+#Start h1{
+    text-align: center;
+    font-family: 'Montserrat';
+}
+#Start p{
+    width: 50%;
+    float: left;
+    font-family: 'Montserrat';
+    margin: 40px 0px 0px 30px;
+    text-align: center;
+    display: flex;
+    line-height: 200%;
+}
+#Start img{
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 772px) {
+    #Start p {
+        width: 100%;
+        margin-left: 0;
+        float: 0;
+    }
+    #Start img{
+        width: 80%;
+        margin: 0 auto;
+        float: 0;
+    }
+    .Effectivelist img{
+        width: 80%;
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .Effectivelist ol{
+        display: block;
+    }
+    .Effectivelist{
+        float: 0;
+    }
+}
+@media screen and (max-width: 439px) {
+    #check{
+        width: 7%;
+    }
+    #cross{
+        width: 7%;
+    }
+}

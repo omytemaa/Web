@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О вузе</title>
+    <link rel="stylesheet" href="CSS/aboutus.css?v=1.0">
+    <link rel="stylesheet" href="CSS/main.css?v=1.0">
+    <link rel="shortcut icon" href="images/2824450_academic_cap_graduation_school_square_icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=254523b6-ad06-4f76-87e5-2f1a1effd5f0&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header>
+                <a href="index.html">
+                    <img id="logo" src="images/icons8-zendesk-96.png" alt="logo" title="logo">
+                </a>
+                Я студент БГТУ
+                <div id="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+            <div class="nav-wrapper">
+                <ul id="nav">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="methods.html">Обо мне</a></li>
+                    <li><a href="methods.html#transition">Дисциплины</a></li>
+                    <li><a href="aboutus.html">О Вузе</a></li>
+                </ul>
+            </div>
+            <div class="content-wrapper">
+                <main>
+                    <div id="START">
+                        <h1>О Вузе</h1>
+                        <p>
+                            Военно-технический университет (БГТУ "Военмех") — это высшее учебное заведение в России, специализирующееся в области инженерных наук и техники, особенно в контексте военных приложений.
+                            БГТУ "Военмех" предоставляет студентам обширные знания в области военной техники, автоматизации и управления, радиоэлектроники, информационной безопасности и других инженерных дисциплин. 
+                            Университет активно сотрудничает с военными организациями, что обеспечивает студентам возможность получить практический опыт и применить свои знания в реальных военно-технических проектах.
+                            БГТУ "Военмех" является центром профессиональной подготовки кадров в области военной и инженерной сфер, предоставляя студентам возможность успешной карьеры в военных и гражданских областях индустрии.
+                        </p>
+                    </div>
+                    <div class="contain">
+                    <div id="map" style="width: 100%; height: 400px;"></div>
+                </main>
+            </div>
+            <div class="content-wrapper2">
+                <div class="aside">
+                    <h1 id="asideh1">
+                        СПИСОК ДЛЯ НАВИГАЦИИ
+                    </h1>
+                    <div class="listsaside">
+                        <h2><a href="methods.html#start">Обо мне</a></h2>
+                        <div class="burger-line"><a href="methods.html#m1">Город</a></div>
+                        <div class="burger-line"><a href="methods.html#m2">Школа</a></div>
+                        <div class="burger-line"><a href="methods.html#m3">Спорт</a></div>
+                        <div class="burger-line"><a href="methods.html#m4">Навыки</a></div>
+                        <div class="burger-line"><a href="methods.html#m5">Заключение</a></div>
+                        <h2 id="asideh2"><a href="methods.html#transition">Дисциплины</a></h2>
+                        <div class="burger-line"><a href="methods.html#m6">Структуры данных</a></div>
+                        <div class="burger-line"><a href="methods.html#m7">С++</a></div>
+                        <div class="burger-line"><a href="methods.html#m8">С#</a></div>
+                        <div class="burger-line"><a href="methods.html#m9">Интернет-технологии</a></div>
+                        <div class="burger-line"><a href="methods.html#m10">Доп.образование</a></div>
+                        <h2 id="asideh3"><a href="aboutus.html">О Вузе</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-up" id="scrollUpBtn">
+            <img src="images/scroll.png" alt="scroll" title="scroll">
+        </div>
+        <div class="footer">
+            <footer>
+                <div class="container">
+                    <a href="https://t.me/omytemaa">
+                        <img id="telegram" src="images/icons8-телеграмма-app-48.png" alt="telegram" title="telegram">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+    
+    <script>
+        ymaps.ready(init);
+
+function init() {
+   // Создание карты
+   var myMap = new ymaps.Map("map", {
+      center: [59.916365, 30.315760], // Указываем координаты центра карты
+      zoom: 16 // Уровень масштабирования
+   });
+//60.013807, 30.236161
+   // Устанавливаем метку
+   var myPlacemark = new ymaps.Placemark([59.916365, 30.315760], {
+      balloonContent: '1-я Красноармейская, 1/21'
+   });
+
+   // Добавляем метку на карту
+   myMap.geoObjects.add(myPlacemark);
+}
+
+
+     </script>
+     
+    </body>
+</html>

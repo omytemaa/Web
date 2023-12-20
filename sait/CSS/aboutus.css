@@ -1,0 +1,22 @@
+main{
+    width: 95%;
+    float: left;
+    height: 100%;
+    border: 5px solid silver;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#START{
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    padding: 5% 10%;
+    border-bottom: 5px dashed silver;
+    background-color: rgb(0, 0, 0);
+}
+#START p{
+    margin-top: 5%;
+    text-align: left;
+    line-height: 180%;
+    font-size: 20px;
+}
